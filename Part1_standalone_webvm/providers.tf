@@ -1,5 +1,5 @@
 provider "aws" {
-  region  = var.aws_region
+  region = var.aws_region
 
   # You can use access keys
   access_key = var.aws_access_key

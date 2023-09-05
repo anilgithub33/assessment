@@ -1,0 +1,20 @@
+---
+- name: Update Nginx landing page
+  hosts: web_servers
+  become: true
+
+  tasks:
+    - name: Ensure Nginx is installed
+      package:
+        name: nginx
+        state: present
+
+    - name: Update Nginx index.html
+      copy:
+        content: "Hello world from Ansible\n"
+        dest: /usr/share/nginx/html/index.html
+
+    - name: Ensure Nginx is running
+      service:
+        name: nginx
+        state: started

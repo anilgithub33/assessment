@@ -1,0 +1,6 @@
+Part1_standalone_webvm/.terraform/**
+Part1_standalone_webvm/*.plan
+Part1_standalone_webvm/*.tfstate*
+Part2_eks/.terraform/**
+Part2_eks/*.plan
+Part2_eks/*.tfstate*
